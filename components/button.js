@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import theme from '../themes/default';
 import Link from 'next/link';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Button = styled.button`
   transition: background-color ${theme.transitionTime};
@@ -34,7 +35,24 @@ const Button = styled.button`
 }
 `;
 
-export default function (props) {
+export const AnchorButton = function (props) {
+  return (
+    <AnchorLink href={props.href}>
+      <Button
+        onClick={props.onClick}
+        type={props.type}
+        large={props.large}
+        secondary={props.secondary}
+        wide={props.wide}
+        nomargin={props.nomargin}
+      >
+        {props.text}
+      </Button>
+    </AnchorLink>
+  );
+}
+
+export const LinkButton = function (props) {
   return (
     <Link href={props.href}>
       <Button

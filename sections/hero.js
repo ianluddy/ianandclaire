@@ -1,7 +1,7 @@
 import theme from '../themes/default';
 import styled from 'styled-components';
 import Image from '../components/image';
-import Button from '../components/button';
+import { AnchorButton } from '../components/button';
 
 const ImageWrapper = styled.div`
   width: 100%;
@@ -23,7 +23,7 @@ export default function ({}) {
         <Image src="/images/hall-plain.jpg" alt="City Hall" title="City Hall"/>
       </ImageWrapper>
       <ButtonWrapper>
-        <Button large text="RSVP" href="#rsvp"/>
+        <AnchorButton large text="RSVP" href="#rsvp"/>
       </ButtonWrapper>
     </>
   );

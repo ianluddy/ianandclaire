@@ -2,7 +2,7 @@ import theme from '../themes/default';
 import styled from 'styled-components';
 import Subtitle from '../components/subtitle';
 import Image from '../components/image';
-import Button from '../components/button';
+import { LinkButton as Button } from '../components/button';
 
 export default function ({}) {
   return (
