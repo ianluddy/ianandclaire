@@ -12,7 +12,6 @@ const Footer = styled.div`
 export default function () {
   return (
     <Footer>
-      <Image src="images/leaves-footer.webp" alt="Leaves" title="Leaves" />
     </Footer>
   );
 }

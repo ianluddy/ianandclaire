@@ -1,21 +1,22 @@
 import theme from '../themes/default';
 import styled from 'styled-components';
-// import ExportedImage from 'next-image-export-optimizer';
-// import Image from "next/image";
+import Image from "next/future/image";
 
 const Wrapper = styled.div`
+  width: ${(props) => props.width || 'auto'};
+  height: ${(props) => props.height || 'auto'};
   img {
-    width: 100%;
+    position: static !important;
   }
 `;
 
-export default function ({ src, alt, title }) {
+export default function ({ src, alt, width, height }) {
   return (
-    <Wrapper>
-      <img
+    <Wrapper width={width} height={height}>
+      <Image
         src={src}
         alt={alt}
-        title={title}
+        fill
       />
     </Wrapper>
   );

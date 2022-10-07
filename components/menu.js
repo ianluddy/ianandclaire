@@ -26,7 +26,7 @@ const LinkWrapper = styled.div`
 
   a {
     text-decoration: none;
-    color: ${theme.primary};
+    color: ${theme.text};
   }
 `;
 
@@ -44,7 +44,7 @@ const Anchor = function({ href, active, children }) {
 export default function Menu() {
   return (
     <Wrapper>
-      <Anchor href="#the-big-day" active="true">The Big Day</Anchor>
+      <Anchor href="#the-big-day">The Big Day</Anchor>
       <Anchor href="#day-two">Day Two</Anchor>
       <Anchor href="#accommodation">Accommodation</Anchor>
       <Anchor href="#rsvp">RSVP</Anchor>

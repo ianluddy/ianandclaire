@@ -13,11 +13,11 @@ const Layout = styled.div`
 export default function ({ children }) {
   return (
     <>
-      <Header />
+      <Header/>
       <Layout>
         <Page>{children}</Page>
       </Layout>
-      <Footer />
+      <Footer/>
     </>
   );
 }

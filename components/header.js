@@ -12,7 +12,6 @@ const Header = styled.div`
 export default function () {
   return (
     <Header>
-      <Image src="images/leaves-header.webp" alt="Leaves" title="Leaves" />
     </Header>
   );
 }

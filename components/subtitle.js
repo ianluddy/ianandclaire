@@ -10,7 +10,6 @@ const Subtitle = styled.div`
   font-size: 1.4em;
   font-weight: normal;
   text-transform: none;
-  font-style: italic;
   max-width: 90%;
 `;
 

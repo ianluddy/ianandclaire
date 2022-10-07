@@ -4,19 +4,12 @@ import Subtitle from '../components/subtitle';
 import Image from '../components/image';
 import Button from '../components/button';
 
-const ImageWrapper = styled.div`
-  max-width: 500px;
-  margin: 2rem auto;
-`;
-
 export default function ({}) {
   return (
     <>
       <h2>Accommodation</h2>
       <h3> The Clarence Hotel </h3>
-      <ImageWrapper>
-        <Image src="images/clarence.webp" alt="The Clarence" title="The Clarence"/>
-      </ImageWrapper>
+      <Image src="/images/clarence.webp" alt="The Clarence" title="The Clarence"/>
       <Subtitle>
         6-8 Wellington Quay, Temple Bar
       </Subtitle>

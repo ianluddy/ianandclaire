@@ -4,19 +4,13 @@ import Subtitle from '../components/subtitle';
 import Image from '../components/image';
 import Button from '../components/button';
 
-const ImageWrapper = styled.div`
-  max-width: 500px;
-  margin: 2rem auto;
-`;
-
 export default function ({}) {
   return (
     <>
       <h2>Day Two</h2>
       <h3> Roberta's </h3>
-      <ImageWrapper>
-        <Image src="images/robertas.jpeg" alt="Robertas" title="Robertas"/>
-      </ImageWrapper>
+      <Subtitle>Saturday Feb 4, 2023</Subtitle>
+      <Image src="/images/robertas.jpeg" alt="Robertas" title="Robertas"/>
       <Subtitle>
         1 Essex St East, Temple Bar
       </Subtitle>

@@ -5,7 +5,9 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 import Layout from '../components/layout';
+import Title from '../components/title';
 import Subtitle from '../components/subtitle';
+import Image from '../components/image';
 import Section from '../components/section';
 import Menu from '../components/menu';
 
@@ -28,7 +30,7 @@ export default function (props) {
         />
       </Head>
       <Layout>
-        <h1> Ian & Claire </h1>
+        <Title/>
         <Subtitle>Friday Feb 3, 2023 • City Hall, Dublin</Subtitle>
         <Menu/>
         <Section>
@@ -43,7 +45,7 @@ export default function (props) {
         <Section id="accommodation">
           <Accommodation/>
         </Section>
-        <Section id="rsvp" noPadding={true}>
+        <Section id="rsvp" fullWidth={true}>
           <Rsvp/>
         </Section>
       </Layout>
