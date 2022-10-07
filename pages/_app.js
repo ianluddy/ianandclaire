@@ -18,9 +18,6 @@ export default function ({ Component, pageProps }) {
           <meta name="robots" content="noindex"/>
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
-          <link rel="preconnect" href="https://fonts.googleapis.com"/>
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-          <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Cormorant&display=swap" rel="stylesheet"/>
           <meta property="og:image" content="images/favicon/favicon.ico" />
           <link rel="shortcut icon" href="images/favicon/favicon.ico" />
         </Head>
