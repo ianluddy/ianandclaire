@@ -4,14 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "optimise": "npx next-image-export-optimizer",
+    "export": "next build && next export && next-export-optimize-images",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "next": "12.3.1",
-    "next-image-export-optimizer": "^0.14.5",
+    "next-export-optimize-images": "^1.9.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "styled-components": "^5.3.6"
