@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import theme from '../themes/default';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
-import Link from 'next/link';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Wrapper = styled.div`
   margin-top: 3rem;
@@ -21,33 +19,39 @@ const LinkWrapper = styled.div`
   letter-spacing: 1.5px;
   line-height: 1;
   font-size: 18px;
-  font-weight: 500;
-  border-bottom: ${(props) => (props.active ? `2px solid ${theme.primary}` : '2px solid transparent')};
-
   a {
+    transition: color ${theme.transitionTime};
     text-decoration: none;
     color: ${theme.text};
+    &:hover {
+      color: ${theme.textLight};
+    }
   }
 `;
-
-const Anchor = function({ href, active, children }) {
-  const router = useRouter();
-  return (
-    <LinkWrapper active={active}>
-      <Link href={href}>
-        {children}
-      </Link>
-    </LinkWrapper>
-  );
-}
 
 export default function Menu() {
   return (
     <Wrapper>
-      <Anchor href="#the-big-day">The Big Day</Anchor>
-      <Anchor href="#day-two">Day Two</Anchor>
-      <Anchor href="#accommodation">Accommodation</Anchor>
-      <Anchor href="#rsvp">RSVP</Anchor>
+      <LinkWrapper>
+        <AnchorLink href="#the-big-day">
+          The Big Day
+        </AnchorLink>
+      </LinkWrapper>
+      <LinkWrapper>
+        <AnchorLink href="#day-two">
+          Day Two
+        </AnchorLink>
+      </LinkWrapper>
+      <LinkWrapper>
+        <AnchorLink href="#accommodation">
+          Accommodation
+        </AnchorLink>
+      </LinkWrapper>
+      <LinkWrapper>
+        <AnchorLink href="#rsvp">
+          Rsvp
+        </AnchorLink>
+      </LinkWrapper>
     </Wrapper>
   );
 }

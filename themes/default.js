@@ -4,6 +4,7 @@ const theme = {
   fontNav: "'Abhaya Libre', sans-serif;",
   fontBody: "'Cormorant', sans-serif;",
   text: "#000",
+  textLight: "#888",
   body: "#FFFFFF",
   primary: "#EA9EA9",
   primaryLight: "#f5b0b3",
