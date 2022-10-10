@@ -35,5 +35,5 @@ jobs:
          ftp-server: ftp.ianluddy.com/
          ftp-username: ianandclaire@ianluddy.com
          ftp-password: ${{ secrets.FTP_PASSWORD }}
-         local-dir: out
+         local-dir: /home/runner/work/ianandclaire/ianandclaire/out
          git-ftp-args: --insecure 
