@@ -27,7 +27,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-      - run: npm ci
       - run: npm run build
 
       - uses: SamKirkland/FTP-Deploy-Action@4.3.2
@@ -35,5 +34,5 @@ jobs:
          server: ftp.ianluddy.com/
          username: ianandclaire@ianluddy.com
          password: ${{ secrets.FTP_PASSWORD }}
-         local-dir: out
+         local-dir: ./out/
          dangerous-clean-slate: true
