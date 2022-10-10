@@ -33,7 +33,7 @@ jobs:
       - uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
          ftp-server: ftp.ianluddy.com/
-         ftp-username: ci@ianluddy.com
+         ftp-username: ianandclaire@ianluddy.com
          ftp-password: ${{ secrets.FTP_PASSWORD }}
          local-dir: out
          git-ftp-args: --insecure 
