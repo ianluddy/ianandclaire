@@ -12,7 +12,7 @@ const ButtonWrapper = styled.div`
   margin-top: 2rem;
 
   @media (${theme.devices.md}) {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 `;
 
@@ -20,7 +20,7 @@ export default function ({}) {
   return (
     <>
       <ImageWrapper>
-        <Image src="/images/hall-plain.jpg" alt="City Hall" title="City Hall"/>
+        <Image src="/images/hall-original.jpg" alt="City Hall" title="City Hall"/>
       </ImageWrapper>
       <ButtonWrapper>
         <AnchorButton large text="RSVP" href="#rsvp"/>
