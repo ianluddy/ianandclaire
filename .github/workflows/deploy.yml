@@ -36,4 +36,5 @@ jobs:
          ftp-username: ianandclaire@ianluddy.com
          ftp-password: ${{ secrets.FTP_PASSWORD }}
          dangerous-clean-slate: true
+         local-dir: out
          git-ftp-args: --insecure 
