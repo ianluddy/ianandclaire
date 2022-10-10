@@ -10,13 +10,14 @@ const Wrapper = styled.div`
   }
 `;
 
-export default function ({ src, alt, width, height }) {
+export default function ({ src, alt, width, height, priority }) {
   return (
     <Wrapper width={width} height={height}>
       <Image
         src={src}
         alt={alt}
         fill
+        priority={priority || false}
       />
     </Wrapper>
   );

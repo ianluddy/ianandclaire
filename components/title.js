@@ -23,9 +23,9 @@ const Wrapper = styled.div`
 export default function () {
   return (
     <Wrapper>
-      <Image src="/images/svgs/Asset 8.svg" alt="Flowers" title="Flowers" width="50px"/>
+      <Image src="/images/svgs/Asset 8.svg" alt="Flowers" title="Flowers" width="50px" priority="true"/>
       <h1> Ian & Claire </h1>
-      <Image src="/images/svgs/Asset 9.svg" alt="Flowers" title="Flowers" width="50px"/>
+      <Image src="/images/svgs/Asset 9.svg" alt="Flowers" title="Flowers" width="50px" priority="true"/>
     </Wrapper>
   );
 }
