@@ -3,6 +3,7 @@ import theme from '../themes/default';
 
 import Head from 'next/head';
 import Link from 'next/link';
+import FadeIn from 'react-fade-in';
 
 import Layout from '../components/layout';
 import Title from '../components/title';
@@ -30,24 +31,26 @@ export default function (props) {
         />
       </Head>
       <Layout>
-        <Title/>
-        <Subtitle>Friday Feb 3, 2023 • City Hall, Dublin</Subtitle>
-        <Menu/>
-        <Section>
-          <Hero/>
-        </Section>
-        <Section id="the-big-day">
-          <TheBigDay/>
-        </Section>
-        <Section id="day-two">
-          <DayTwo/>
-        </Section>
-        <Section id="accommodation">
-          <Accommodation/>
-        </Section>
-        <Section id="rsvp" fullWidth={true}>
-          <Rsvp/>
-        </Section>
+        <FadeIn>
+          <Title/>
+          <Subtitle>Friday Feb 3, 2023 • City Hall, Dublin</Subtitle>
+          <Menu/>
+          <Section>
+            <Hero/>
+          </Section>
+          <Section id="the-big-day">
+            <TheBigDay/>
+          </Section>
+          <Section id="day-two">
+            <DayTwo/>
+          </Section>
+          <Section id="accommodation">
+            <Accommodation/>
+          </Section>
+          <Section id="rsvp" fullWidth={true}>
+            <Rsvp/>
+          </Section>
+        </FadeIn>
       </Layout>
     </>
   );
