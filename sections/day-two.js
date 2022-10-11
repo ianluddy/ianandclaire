@@ -22,9 +22,9 @@ export default function ({}) {
       <Logo>
         <Image src="/images/robertas-logo.svg" alt="Robertas Logo" title="Robertas Logo"/>
       </Logo>
-      <p>
+      <Subtitle>
         1 Essex St East, Temple Bar
-      </p>
+      </Subtitle>
       <p>We'll be heading to Roberta's in Temple Bar for beers and nibbles at 7pm on Saturday. We'd love to see you there if you can make it.</p>
       <Button large text="Visit Website" href="https://robertas.ie/"/>
     </>

@@ -6,10 +6,13 @@ const Subtitle = styled.div`
   margin: 1rem auto;
   max-width: 400px;
   letter-spacing: 1px;
-  font-size: 1.4em;
   font-weight: normal;
-  text-transform: none;
   max-width: 90%;
+  font-style: italic;
+  font-size: 1.3em;
+  @media (${theme.devices.md}) {
+    font-size: 1.4em;
+  }
 `;
 
 export default function ({ children }) {
