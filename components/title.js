@@ -6,12 +6,6 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 2rem 0;
-  h1 {
-    @media (${theme.devices.md}) {
-      margin: 0 3rem;
-    }
-  }
   > div {
     display: none;
     @media (${theme.devices.md}) {

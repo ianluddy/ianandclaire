@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import theme from '../themes/default';
 
 const Wrapper = styled.div`
-  max-width: 250px;
+  max-width: 180px;
   margin: 1rem auto;
 
   @media (${theme.devices.md}) {
-    max-width: 320px;
+    max-width: 220px;
   }
 `;
 
