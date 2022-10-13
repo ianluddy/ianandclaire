@@ -108,7 +108,7 @@ const WeDrink = function() {
       </Time>
       <Title>We Drink</Title>
       <Location>The Stag's Head, 1 Dame Court, Dublin</Location>
-      <Border top={"calc(50% - 1rem)"} bottom={"0"} right={"-2px"}/>
+      <Border top={"calc(50% - 2rem)"} bottom={"0"} right={"-2px"}/>
     </Event>
   );
 }
