@@ -26,6 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 2.5em;
     @media (${theme.devices.md}) {
       font-size: 3em;
+      margin: 2rem 0;
     }
   }
   h3 {
