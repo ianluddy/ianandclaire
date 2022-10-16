@@ -23,7 +23,7 @@ export default function ({}) {
         <Image src="/images/hall.jpg" alt="City Hall" title="City Hall" priority="true"/>
       </ImageWrapper>
       <ButtonWrapper>
-        <AnchorButton large text="RSVP" href="#rsvp"/>
+        <AnchorButton text="RSVP" href="#rsvp"/>
       </ButtonWrapper>
     </>
   );
