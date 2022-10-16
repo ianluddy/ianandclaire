@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import theme from '../themes/default';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import RespWrapper from './wrapper';
+import BaseWrapper from './wrapper';
 
-const Wrapper = styled(RespWrapper)`
+const Wrapper = styled(BaseWrapper)`
   margin-top: 3rem;
 `;
 

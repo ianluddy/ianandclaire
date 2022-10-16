@@ -1,9 +1,9 @@
 import theme from '../themes/default';
 import styled from 'styled-components';
 import Image from 'next/future/image';
-import RespWrapper from './wrapper';
+import BaseWrapper from './wrapper';
 
-const Wrapper = styled(RespWrapper)`
+const Wrapper = styled(BaseWrapper)`
   width: ${(props) => props.width || 'auto'};
   height: ${(props) => props.height || 'auto'};
   transform: ${(props) => props.transform || 'none'};
