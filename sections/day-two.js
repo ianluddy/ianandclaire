@@ -18,7 +18,7 @@ export default function ({}) {
   return (
     <>
       <h2>Day Two</h2>
-      <Image src="/images/robertas1.webp" alt="Robertas" title="Robertas" unoptimized={true}/>
+      <Image src="/images/robertas.webp" alt="Robertas" title="Robertas" unoptimized={true}/>
       <Logo>
         <Image src="/images/robertas-logo.svg" alt="Robertas Logo" title="Robertas Logo"/>
       </Logo>
