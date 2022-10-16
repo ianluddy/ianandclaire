@@ -18,7 +18,7 @@ export default function ({}) {
   return (
     <>
       <h2>Accommodation</h2>
-      <Image src="/images/clarence1.webp" alt="The Clarence" title="The Clarence"/>
+      <Image src="/images/clarence.jpg" alt="The Clarence" title="The Clarence"/>
       <Logo>
         <Image src="/images/clarence-logo.svg" alt="The Clarence Logo" title="The Clarence Logo"/>
       </Logo>
