@@ -20,7 +20,7 @@ export default function ({}) {
   return (
     <>
       <ImageWrapper>
-        <Image src="/images/hall-original.jpg" alt="City Hall" title="City Hall" priority="true"/>
+        <Image src="/images/hall.jpg" alt="City Hall" title="City Hall" priority="true"/>
       </ImageWrapper>
       <ButtonWrapper>
         <AnchorButton large text="RSVP" href="#rsvp"/>
