@@ -2,19 +2,13 @@ import theme from '../themes/default';
 import styled from 'styled-components';
 import Subtitle from '../components/subtitle';
 import Image from '../components/image';
+import Wrapper from '../components/wrapper';
 
-const Timeline = styled.div`
-  display: none;
+const Timeline = styled(Wrapper)`
   @media (${theme.devices.md}) {
     margin: 2rem 0;
     display: flex;
     flex-grow: 1;
-  }
-`;
-
-const Linear = styled.div`
-  @media (${theme.devices.md}) {
-    display: none;
   }
 `;
 
@@ -100,7 +94,7 @@ const WeDrink = function() {
   return (
     <Event>
       <ImageWrapper>
-        <Image src="/images/svgs/Asset 25.svg" alt="We Drink" title="We Drink" width="70px"/>
+        <Image src="/images/svgs/glasses.svg" alt="We Drink" title="We Drink" width="70px"/>
       </ImageWrapper>
       <Time>
         16:30
@@ -117,7 +111,7 @@ const WeDance = function() {
   return (
     <Event>
       <ImageWrapper>
-        <Image src="/images/svgs/Asset 33.svg" alt="We Dance" title="We Dance" width="50px"/>
+        <Image src="/images/svgs/music.svg" alt="We Dance" title="We Dance" width="50px"/>
       </ImageWrapper>
       <Time>
         21:30
@@ -134,7 +128,7 @@ const WeDo = function() {
   return (
     <Event>
       <ImageWrapper>
-        <Image src="/images/svgs/Asset 1.svg" alt="We Do" title="We Do" width="50px"/>
+        <Image src="/images/svgs/rings.svg" alt="We Do" title="We Do" width="50px"/>
       </ImageWrapper>
       <Time>
         15:30
@@ -151,7 +145,7 @@ const WeDine = function() {
   return (
     <Event>
       <ImageWrapper>
-        <Image src="/images/svgs/Asset 23.svg" alt="We Dine" title="We Dine" width="40px"/>
+        <Image src="/images/svgs/cutlery.svg" alt="We Dine" title="We Dine" width="40px"/>
       </ImageWrapper>
       <Time>
         18:30
@@ -168,7 +162,7 @@ export default function ({ children, hide, padding }) {
     <>
       <h2>The Big Day</h2>
       <Subtitle>Friday Feb 3, 2023</Subtitle>
-      <Timeline>
+      <Timeline hideMobile={"true"}>
         <Events>
           <WeDrink/>
           <WeDance/>
@@ -178,12 +172,12 @@ export default function ({ children, hide, padding }) {
           <WeDine/>
         </Events>
       </Timeline>
-      <Linear>
+      <Wrapper hideDesktop={"true"}>
         <WeDo/>
         <WeDrink/>
         <WeDine/>
         <WeDance/>
-      </Linear>
+      </Wrapper>
     </>
   );
 }
