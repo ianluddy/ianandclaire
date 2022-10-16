@@ -15,7 +15,7 @@ const Wrapper = styled(BaseWrapper)`
 export default function ({ src, alt, width, height, priority, transform, hideMobile, hideDesktop }) {
   return (
     <Wrapper width={width} height={height} transform={transform} hideMobile={hideMobile} hideDesktop={hideDesktop}>
-      <Image src={src} alt={alt} fill priority={priority || false} />
+      <Image src={src} alt={alt} fill priority={priority || false} unoptimized={true}/>
     </Wrapper>
   );
 }
