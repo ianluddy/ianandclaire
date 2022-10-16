@@ -1,17 +1,10 @@
 import styled from 'styled-components';
 import theme from '../themes/default';
-
 import Head from 'next/head';
 import Link from 'next/link';
 import FadeIn from 'react-fade-in';
-
 import Layout from '../components/layout';
-import Title from '../components/title';
-import Subtitle from '../components/subtitle';
-import Image from '../components/image';
 import Section from '../components/section';
-import Menu from '../components/menu';
-
 import TheBigDay from '../sections/the-big-day';
 import Rsvp from '../sections/rsvp';
 import Accommodation from '../sections/accommodation';
@@ -32,12 +25,7 @@ export default function (props) {
       </Head>
       <Layout>
         <FadeIn>
-          <Title/>
-          <Subtitle>Friday Feb 3, 2023 • City Hall, Dublin</Subtitle>
-          <Menu/>
-          <Section>
-            <Hero/>
-          </Section>
+          <Hero/>
           <Section id="the-big-day">
             <TheBigDay/>
           </Section>

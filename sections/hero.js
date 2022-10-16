@@ -1,30 +1,43 @@
 import theme from '../themes/default';
 import styled from 'styled-components';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Image from '../components/image';
+import Menu from '../components/menu';
+import Subtitle from '../components/subtitle';
 import { AnchorButton } from '../components/button';
 
-const ImageWrapper = styled.div`
-  width: 100%;
-  margin: 0 auto;
+const Wrapper = styled.div`
+  margin: 0 0 3rem 0;
 `;
 
-const ButtonWrapper = styled.div`
-  margin-top: 2rem;
+const ImageWrapper = styled.div`
+  margin: 2rem 0 1rem 0;
+`;
 
+const Title = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   @media (${theme.devices.md}) {
-    margin-top: 2rem;
+    flex-direction: row;
   }
 `;
 
 export default function ({}) {
   return (
-    <>
+    <Wrapper>
+      <Title>
+        <Image src="/images/svgs/flowers.svg" alt="Flowers" title="Flowers" width="40px" priority="true" hideMobile="true"/>
+        <h1> Ian & Claire </h1>
+        <Image src="/images/svgs/flowers.svg" alt="Flowers" title="Flowers" width="40px" priority="true" transform="scaleX(-1)" hideMobile="true"/>
+      </Title>
+      <Subtitle>Friday Feb 3, 2023 • City Hall, Dublin</Subtitle>
+      <Menu/>
       <ImageWrapper>
         <Image src="/images/hall.jpg" alt="City Hall" title="City Hall" priority="true"/>
       </ImageWrapper>
-      <ButtonWrapper>
-        <AnchorButton text="RSVP" href="#rsvp"/>
-      </ButtonWrapper>
-    </>
+      <AnchorButton text="RSVP" href="#rsvp"/>
+    </Wrapper>
   );
 }

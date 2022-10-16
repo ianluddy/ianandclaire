@@ -7,7 +7,7 @@ const Wrapper = styled(BaseWrapper)`
   margin-top: 3rem;
 `;
 
-const LinkWrapper = styled.div`
+const Link = styled.div`
   display: inline-block;
   margin: 0 0.5rem;
   text-transform: uppercase;
@@ -28,26 +28,26 @@ const LinkWrapper = styled.div`
 export default function Menu() {
   return (
     <Wrapper hideMobile={"true"}>
-      <LinkWrapper>
+      <Link>
         <AnchorLink href="#the-big-day">
           The Big Day
         </AnchorLink>
-      </LinkWrapper>
-      <LinkWrapper>
+      </Link>
+      <Link>
         <AnchorLink href="#day-two">
           Day Two
         </AnchorLink>
-      </LinkWrapper>
-      <LinkWrapper>
+      </Link>
+      <Link>
         <AnchorLink href="#accommodation">
           Accommodation
         </AnchorLink>
-      </LinkWrapper>
-      <LinkWrapper>
+      </Link>
+      <Link>
         <AnchorLink href="#rsvp">
           Rsvp
         </AnchorLink>
-      </LinkWrapper>
+      </Link>
     </Wrapper>
   );
 }

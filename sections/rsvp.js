@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const IframeWrapper = styled.div`
   iframe {
     width: 100%;
-    height: 900px;
+    height: 850px;
     @media (${theme.devices.md}) {
       height: 800px;
     }
