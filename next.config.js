@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const withExportImages = require('next-export-optimize-images')
+// const withExportImages = require('next-export-optimize-images')
 const nextConfig = {
   compiler: {
     // Enables the styled-components SWC transform
@@ -8,4 +8,5 @@ const nextConfig = {
 }
 
 
-module.exports = withExportImages(nextConfig)
+// module.exports = withExportImages(nextConfig)
+module.exports = nextConfig;
