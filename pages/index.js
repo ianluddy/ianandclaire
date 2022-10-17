@@ -36,7 +36,7 @@ export default function (props) {
             <Accommodation/>
           </Section>
           <Section id="rsvp" fullWidth={true}>
-
+            <Rsvp/>
           </Section>
         </FadeIn>
       </Layout>
