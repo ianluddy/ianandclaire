@@ -8,6 +8,10 @@ import { AnchorButton } from '../components/button';
 
 const Wrapper = styled.div`
   margin: 0 0 3rem 0;
+  padding: 0 1rem;
+  @media (${theme.devices.md}) {
+    padding: 0;
+  }
 `;
 
 const ImageWrapper = styled.div`
