@@ -16,7 +16,7 @@ export default function ({ children, hide, padding }) {
     <>
       <h2>Rsvp</h2>
       <IframeWrapper>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftDXNh4spdexg6NNx7mEVMUIkkQmTkURjkvtbL7dNBvoCd7w/viewform?embedded=true" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+        <iframe loading="lazy" src="https://docs.google.com/forms/d/e/1FAIpQLSftDXNh4spdexg6NNx7mEVMUIkkQmTkURjkvtbL7dNBvoCd7w/viewform?embedded=true" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
       </IframeWrapper>
     </>
   );
