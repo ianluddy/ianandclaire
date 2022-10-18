@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import theme from '../themes/default';
+import BaseWrapper from './wrapper';
 
-const Subtitle = styled.div`
+const Wrapper = styled(BaseWrapper)`
   text-align: center;
   margin: 1rem auto;
   max-width: 400px;
@@ -9,16 +10,17 @@ const Subtitle = styled.div`
   font-weight: normal;
   font-style: italic;
   font-size: 1.3em;
+  line-height: 1.4em;
   @media (${theme.devices.md}) {
     font-size: 1.4em;
     max-width: 90%;
   }
 `;
 
-export default function ({ children }) {
+export default function ({ children, ...props }) {
   return (
-    <Subtitle>
+    <Wrapper {...props}>
       {children}
-    </Subtitle>
+    </Wrapper>
   );
 }

@@ -61,7 +61,8 @@ export default function ({}) {
         <Image src="/images/svgs/flowers.svg" alt="Flowers" title="Flowers" width="40px" priority="true" transform="scaleX(-1)" hideMobile="true"/>
       </Title>
       <SubtitleWrapper>
-        <Subtitle>Friday Feb 3, 2023 • City Hall, Dublin</Subtitle>
+        <Subtitle hideMobile="true">Friday Feb 3, 2023 • City Hall, Dublin</Subtitle>
+        <Subtitle hideDesktop="true">Friday Feb 3, 2023 <br/> City Hall, Dame St. Dublin</Subtitle>
       </SubtitleWrapper>
       <Menu/>
       <ImageWrapper>
