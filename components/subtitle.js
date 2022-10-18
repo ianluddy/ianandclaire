@@ -7,11 +7,11 @@ const Subtitle = styled.div`
   max-width: 400px;
   letter-spacing: 1px;
   font-weight: normal;
-  max-width: 90%;
   font-style: italic;
   font-size: 1.3em;
   @media (${theme.devices.md}) {
     font-size: 1.4em;
+    max-width: 90%;
   }
 `;
 

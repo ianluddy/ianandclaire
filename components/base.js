@@ -14,10 +14,10 @@ export const GlobalStyle = createGlobalStyle`
   }
   h1 {
     text-align: center;
-    font-size: 3.5em;
+    font-size: 3.8em;
     margin: 1rem 0;
     @media (${theme.devices.md}) {
-      font-size: 3.75em;
+      font-size: 4em;
       margin: 2rem;
     }
   }

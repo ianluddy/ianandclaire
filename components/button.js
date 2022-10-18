@@ -20,17 +20,13 @@ const Button = styled.button`
   user-select: none;
   touch-action: manipulation;
   cursor: pointer;
-  font-size: 1rem;
-  padding: 8px 18px;
   background-color: ${theme.primary};
   color: ${theme.body};
   &:hover {
     background-color: ${theme.primaryLight};
   }
-  @media (${theme.devices.md}) {
-    font-size: 1.2rem;
-    padding: 14px 22px;
-  }
+  font-size: 1.2rem;
+  padding: 14px 22px;
 }
 `;
 
