@@ -41,7 +41,7 @@ export const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.02em;
     max-width: ${theme.textMaxWidth};
     font-weight: normal;
-    margin: 2rem auto;
+    margin: 0 auto;
     font-size: 1.2em;
     @media (${theme.devices.md}) {
       font-size: 1.3em;

@@ -10,11 +10,17 @@ const Wrapper = styled(BaseWrapper)`
   img {
     position: static !important;
   }
+  @media (${theme.devices.md}) {
+    min-height: ${(props) => props.minHeight || 'none'};
+    img {
+      min-height: ${(props) => props.minHeight || 'none'};
+    }
+  }
 `;
 
-export default function ({ src, alt, width, height, priority, transform, hideMobile, hideDesktop }) {
+export default function ({ src, alt, width, height, minHeight, priority, transform, hideMobile, hideDesktop }) {
   return (
-    <Wrapper width={width} height={height} transform={transform} hideMobile={hideMobile} hideDesktop={hideDesktop}>
+    <Wrapper width={width} minHeight={minHeight} height={height} transform={transform} hideMobile={hideMobile} hideDesktop={hideDesktop}>
       <Image src={src} alt={alt} fill priority={priority || false}/>
     </Wrapper>
   );
