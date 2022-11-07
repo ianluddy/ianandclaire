@@ -2,6 +2,7 @@ import theme from '../themes/default';
 import styled from 'styled-components';
 import Subtitle from '../components/subtitle';
 import Image from '../components/image';
+import AddToCalendar from '../components/addToCalendar';
 import Wrapper from '../components/wrapper';
 
 const Timeline = styled(Wrapper)`
@@ -161,7 +162,10 @@ export default function ({ children, hide, padding }) {
   return (
     <>
       <h2>The Big Day</h2>
-      <Subtitle>Friday Feb 3, 2023</Subtitle>
+      <Subtitle>
+        Friday Feb 3, 2023
+        <AddToCalendar/>
+      </Subtitle>
       <Timeline hideMobile={"true"}>
         <Events>
           <WeDrink/>

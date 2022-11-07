@@ -47,4 +47,19 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 1.3em;
     }
   }
+  // Add to calendar button overrides
+  .atcb-checkmark,
+  .atcb-button > .atcb-icon {
+    display: none !important;
+  }
+  .atcb-text { 
+    font-family: ${theme.fontBody};
+  }
+  .atcb-button {
+    font-family: ${theme.fontBody};
+    box-shadow: none;
+    border: none;
+    background: none;
+    color: ${theme.primary};
+  }
 `;
