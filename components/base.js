@@ -54,9 +54,11 @@ export const GlobalStyle = createGlobalStyle`
   }
   .atcb-text { 
     font-family: ${theme.fontButton};
+    font-weight: normal;
   }
   .atcb-button {
     font-family: ${theme.fontButton};
+    font-weight: normal;
     box-shadow: none;
     border: none;
     background: none;
