@@ -34,7 +34,7 @@ const ButtonWrapper = styled.div`
 
 const ImageWrapper = styled.div`
   order: 2;
-  margin: 1rem 0 0 0;
+  margin: 1rem;
   @media (${theme.devices.md}) {
     order: unset;
     margin: 2rem 0 1rem 0;

@@ -7,7 +7,7 @@ const Wrapper = styled(BaseWrapper)`
   margin: 1rem auto;
   max-width: 400px;
   letter-spacing: 1px;
-  font-weight: normal;
+  font-weight: 600;
   font-style: italic;
   font-size: 1.3em;
   line-height: 1.4em;

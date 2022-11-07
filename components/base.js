@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   h2 {
     margin: 0 0 1rem 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
     @media (${theme.devices.md}) {
       font-size: 3em;
       margin: 2rem 0;
