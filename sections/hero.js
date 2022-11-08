@@ -17,57 +17,38 @@ const Wrapper = styled.div`
   }
 `;
 
-const SubtitleWrapper = styled.div`
-  order: 3;
-  @media (${theme.devices.md}) {
-    order: unset;
-  }
-`;
-
 const ButtonWrapper = styled.div`
-  order: 4;
   margin: 1rem 0;
   @media (${theme.devices.md}) {
-    order: unset;
+
   }
 `;
 
 const ImageWrapper = styled.div`
-  order: 2;
-  margin: 1rem;
+  margin: 0rem 1rem;
   @media (${theme.devices.md}) {
-    order: unset;
     margin: 2rem 0 1rem 0;
   }
 `;
 
 const Title = styled.div`
-  order: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  @media (${theme.devices.md}) {
-    flex-direction: row;
-  }
+  margin: 0 auto;
+  max-width: 450px;
 `;
 
 export default function ({}) {
   return (
     <Wrapper>
       <Title>
-        <Image src="/images/svgs/flowers.svg" alt="Flowers" title="Flowers" width="40px" priority="true" hideMobile="true"/>
-        <h1> Ian & Claire </h1>
-        <Image src="/images/svgs/flowers.svg" alt="Flowers" title="Flowers" width="40px" priority="true" transform="scaleX(-1)" hideMobile="true"/>
+        <Image src="/images/header.png" alt="Ian & Claire" title="Ian & Claire" priority="true" />
       </Title>
-      <SubtitleWrapper>
-        <Subtitle hideMobile="true">Friday Feb 3, 2023 • City Hall, Dublin</Subtitle>
-        <Subtitle hideDesktop="true">Friday Feb 3, 2023 <br/> City Hall, Dame St. Dublin</Subtitle>
-      </SubtitleWrapper>
+      <Subtitle hideMobile="true">Friday Feb 3, 2023 • City Hall, Dublin</Subtitle>
+      <Subtitle hideDesktop="true">Friday Feb 3, 2023</Subtitle>
       <Menu/>
       <ImageWrapper>
         <Image src="/images/hall.jpg" alt="City Hall" title="City Hall" priority="true"/>
       </ImageWrapper>
+      <Subtitle hideDesktop="true">City Hall, Dame St. Dublin</Subtitle>
       <ButtonWrapper>
         <AnchorButton text="RSVP" href="#rsvp"/>
       </ButtonWrapper>

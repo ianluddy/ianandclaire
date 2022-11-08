@@ -23,7 +23,11 @@ export const GlobalStyle = createGlobalStyle`
   }
   h2 {
     margin: 0 0 1rem 0;
-    font-size: 2.8em;
+    font-size: 2.2em;
+    @media (${theme.devices.sm}) {
+      margin: 0 0 1rem 0;
+      font-size: 2.8em;
+    }
     @media (${theme.devices.md}) {
       font-size: 3em;
       margin: 2rem 0;
@@ -52,7 +56,7 @@ export const GlobalStyle = createGlobalStyle`
   .atcb-button > .atcb-icon {
     display: none !important;
   }
-  .atcb-text { 
+  .atcb-text {
     font-family: ${theme.fontButton};
     font-weight: normal;
   }

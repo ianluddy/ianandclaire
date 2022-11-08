@@ -7,12 +7,10 @@ const Wrapper = styled(BaseWrapper)`
   margin: 1rem auto;
   max-width: 400px;
   letter-spacing: 1px;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.4em;
   @media (${theme.devices.md}) {
-    font-size: 1.4em;
+    font-size: 1.3em;
     max-width: 90%;
   }
 `;

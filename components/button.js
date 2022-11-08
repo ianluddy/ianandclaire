@@ -25,8 +25,13 @@ const Button = styled.button`
   &:hover {
     background-color: ${theme.primaryLight};
   }
-  font-size: 1.2rem;
-  padding: 14px 22px;
+  font-size: 1rem;
+  padding: 10px 18px;
+
+  @media (${theme.devices.md}) {
+    font-size: 1.2rem;
+    padding: 14px 22px;
+  }
 }
 `;
 
