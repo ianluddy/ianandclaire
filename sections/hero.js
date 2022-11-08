@@ -33,7 +33,10 @@ const ImageWrapper = styled.div`
 
 const Title = styled.div`
   margin: 0 auto;
-  max-width: 450px;
+  max-width: 85vw;
+  @media (${theme.devices.md}) {
+    max-width: 450px;
+  }
 `;
 
 export default function ({}) {

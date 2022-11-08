@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import BaseWrapper from './wrapper';
 
 const Wrapper = styled(BaseWrapper)`
-  margin-top: 3rem;
+  margin-top: 2rem;
 `;
 
 const Link = styled.div`
