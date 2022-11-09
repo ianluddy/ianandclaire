@@ -25,7 +25,7 @@ export default function ({}) {
       <Subtitle>
         6-8 Wellington Quay, Temple Bar
       </Subtitle>
-      <p>We'll be staying at the Clarence in Temple Bar, you can avail of a special rate if you quote 'Claire Goode Wedding'.</p>
+      <p>We'll be staying at The Clarence in Temple Bar, you can avail of a special rate if you quote 'Claire Goode Wedding'.</p>
       <Wrapper padding={"1.5rem 0 0 0"}>
         <Button large text="Visit Website" href="https://theclarence.ie/"/>
       </Wrapper>

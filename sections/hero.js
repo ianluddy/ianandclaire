@@ -51,7 +51,8 @@ export default function ({}) {
       <ImageWrapper>
         <Image src="/images/hall.jpg" alt="City Hall" title="City Hall" priority="true"/>
       </ImageWrapper>
-      <Subtitle hideDesktop="true">City Hall, Dame St. Dublin</Subtitle>
+      <Subtitle hideDesktop="true"> City Hall, Dame St. Dublin </Subtitle>
+      <Subtitle nomargin>We kindly request you to RSVP by Jan 1st</Subtitle>
       <ButtonWrapper>
         <AnchorButton text="RSVP" href="#rsvp"/>
       </ButtonWrapper>
