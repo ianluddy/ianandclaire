@@ -11,7 +11,6 @@ const theme = {
   secondary: "#437E92",
   transitionTime: "0.3s",
   opacity: "0.6",
-  textMaxWidth: "500px",
   breakpoints: {
     xs: 375,
     sm: 480,

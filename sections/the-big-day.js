@@ -1,6 +1,6 @@
 import theme from '../themes/default';
 import styled from 'styled-components';
-import Subtitle from '../components/subtitle';
+import Paragraph from '../components/paragraph';
 import Image from '../components/image';
 import AddToCalendar from '../components/addToCalendar';
 import Wrapper from '../components/wrapper';
@@ -70,15 +70,21 @@ const Event = styled.div`
 `;
 
 const Time  = styled.div`
-  font-size: 1.75em;
+  font-size: 1.65em;
   padding: 0.5rem;
   width: 100%;
   position: relative;
+  @media (${theme.devices.md}) {
+    font-size: 1.75em;
+  }
 `;
 
 const Title  = styled.div`
-  font-size: 1.5em;
+  font-size: 1.4em;
   padding: 0.5rem;
+  @media (${theme.devices.md}) {
+    font-size: 1.5em;
+  }
 `;
 
 const ImageWrapper  = styled.div`
@@ -162,10 +168,10 @@ export default function ({ children, hide, padding }) {
   return (
     <>
       <h2>The Big Day</h2>
-      <Subtitle>
+      <Paragraph>
         Friday Feb 3, 2023
         <AddToCalendar/>
-      </Subtitle>
+      </Paragraph>
       <Timeline hideMobile={"true"}>
         <Events>
           <WeDrink/>

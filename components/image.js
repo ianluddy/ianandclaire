@@ -10,11 +10,12 @@ const Wrapper = styled(BaseWrapper)`
   img {
     position: static !important;
   }
+  min-height: ${(props) => props.minHeight ? props.minHeight[0] : 'none'};
+  @media (${theme.devices.sm}) {
+    min-height: unset;
+  }
   @media (${theme.devices.md}) {
-    min-height: ${(props) => props.minHeight || 'none'};
-    img {
-      min-height: ${(props) => props.minHeight || 'none'};
-    }
+    min-height: ${(props) => props.minHeight ? props.minHeight[1] : 'none'};
   }
 `;
 

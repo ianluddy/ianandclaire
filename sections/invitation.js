@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Image from '../components/image';
 import Menu from '../components/menu';
-import Subtitle from '../components/subtitle';
+import Paragraph from '../components/paragraph';
 import { AnchorButton } from '../components/button';
 
 const Wrapper = styled.div`
@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const SubtitleWrapper = styled.div`
+const ParagraphWrapper = styled.div`
   order: 3;
   @media (${theme.devices.md}) {
     order: unset;
@@ -62,17 +62,17 @@ const Title = styled.div`
 export default function ({}) {
   return (
     <Wrapper>
-      <p> Together with their families </p>
+      <Paragraph> Together with their families </Paragraph>
       <Title>
         <Image src="/images/svgs/flowers.svg" alt="Flowers" title="Flowers" width="40px" priority="true" hideMobile="true"/>
         <h1> Ian & Claire </h1>
         <Image src="/images/svgs/flowers.svg" alt="Flowers" title="Flowers" width="40px" priority="true" transform="scaleX(-1)" hideMobile="true"/>
       </Title>
-      <p> Invite you to join them <br/> at their Wedding </p>
+      <Paragraph> Invite you to join them <br/> at their Wedding </Paragraph>
       <ImageWrapper>
         <Image src="/images/hall.jpg" alt="City Hall" title="City Hall" priority="true"/>
       </ImageWrapper>
-      <p>Friday Feb 3, 2023 <br/> City Hall, Dame St. Dublin</p>
+      <Paragraph>Friday Feb 3, 2023 <br/> City Hall, Dame St. Dublin</Paragraph>
       <ButtonWrapper>
         <AnchorButton text="RSVP" href="#rsvp"/>
       </ButtonWrapper>

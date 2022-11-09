@@ -4,14 +4,14 @@ import BaseWrapper from './wrapper';
 
 const Wrapper = styled(BaseWrapper)`
   text-align: center;
-  margin: ${(props) => (props.nomargin ? '0 auto' : '1rem auto')};
-  max-width: 400px;
-  letter-spacing: 1px;
+  letter-spacing: 0.02em;
+  font-weight: normal;
+  margin: ${(props) => (props.margin || '1rem auto')};
+  letter-spacing: 0.02em;
   font-size: 1.2em;
-  line-height: 1.4em;
   @media (${theme.devices.md}) {
     font-size: 1.3em;
-    max-width: 90%;
+    max-width: 450px;
   }
 `;
 

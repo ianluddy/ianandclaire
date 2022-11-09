@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Image from '../components/image';
 import Menu from '../components/menu';
-import Subtitle from '../components/subtitle';
+import Paragraph from '../components/paragraph';
 import { AnchorButton } from '../components/button';
 
 const Wrapper = styled.div`
@@ -18,10 +18,6 @@ const Wrapper = styled.div`
 `;
 
 const ButtonWrapper = styled.div`
-  margin: 1rem 0;
-  @media (${theme.devices.md}) {
-
-  }
 `;
 
 const ImageWrapper = styled.div`
@@ -33,9 +29,18 @@ const ImageWrapper = styled.div`
 
 const Title = styled.div`
   margin: 0 auto;
-  max-width: 85vw;
+  max-width: 90vw;
   @media (${theme.devices.md}) {
     max-width: 450px;
+  }
+`;
+
+const Deadline = styled(Paragraph)`
+  color: darkgray;
+  font-size: 1.1em;
+  font-style: italic;
+  @media (${theme.devices.md}) {
+    font-size: 1.2em;
   }
 `;
 
@@ -45,14 +50,14 @@ export default function ({}) {
       <Title>
         <Image src="/images/header.png" alt="Ian & Claire" title="Ian & Claire" priority="true" />
       </Title>
-      <Subtitle hideMobile="true">Friday Feb 3, 2023 • City Hall, Dublin</Subtitle>
-      <Subtitle hideDesktop="true">Friday Feb 3, 2023</Subtitle>
+      <Paragraph hideMobile="true">Friday Feb 3, 2023 • City Hall, Dublin</Paragraph>
+      <Paragraph hideDesktop="true" margin={"1rem 0 0 0"}>Friday Feb 3, 2023</Paragraph>
+      <Paragraph hideDesktop="true" margin={"0.5rem 0 2rem 0"}>City Hall, Dame St. Dublin</Paragraph>
       <Menu/>
       <ImageWrapper>
         <Image src="/images/hall.jpg" alt="City Hall" title="City Hall" priority="true"/>
       </ImageWrapper>
-      <Subtitle hideDesktop="true"> City Hall, Dame St. Dublin </Subtitle>
-      <Subtitle nomargin>We kindly request you to RSVP by Jan 1st</Subtitle>
+      <Deadline padding={"0 2rem"}>We kindly request you to RSVP by January 1st</Deadline>
       <ButtonWrapper>
         <AnchorButton text="RSVP" href="#rsvp"/>
       </ButtonWrapper>

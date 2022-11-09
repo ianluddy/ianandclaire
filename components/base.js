@@ -15,15 +15,13 @@ export const GlobalStyle = createGlobalStyle`
   h1 {
     text-align: center;
     font-size: 3.8em;
-    margin: 1rem 0;
     @media (${theme.devices.md}) {
       font-size: 4em;
-      margin: 2rem;
     }
   }
   h2 {
     margin: 0 0 1rem 0;
-    font-size: 2.2em;
+    font-size: 2.5em;
     @media (${theme.devices.sm}) {
       margin: 0 0 1rem 0;
       font-size: 2.8em;
@@ -39,16 +37,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: ${theme.fontBody};
     @media (${theme.devices.md}) {
       font-size: 2em;
-    }
-  }
-  p {
-    letter-spacing: 0.02em;
-    max-width: ${theme.textMaxWidth};
-    font-weight: normal;
-    margin: 0 auto;
-    font-size: 1.2em;
-    @media (${theme.devices.md}) {
-      font-size: 1.3em;
     }
   }
   // Add to calendar button overrides
