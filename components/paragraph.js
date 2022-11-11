@@ -5,7 +5,7 @@ import BaseWrapper from './wrapper';
 const Wrapper = styled(BaseWrapper)`
   text-align: center;
   letter-spacing: 0.02em;
-  font-weight: normal;
+  font-weight: 500;
   margin: ${(props) => (props.margin || '1rem auto')};
   letter-spacing: 0.02em;
   font-size: 1.2em;

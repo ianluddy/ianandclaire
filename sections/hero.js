@@ -4,6 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Image from '../components/image';
 import Menu from '../components/menu';
 import Paragraph from '../components/paragraph';
+import Quote from '../components/quote';
 import { AnchorButton } from '../components/button';
 
 const Wrapper = styled.div`
@@ -35,15 +36,6 @@ const Title = styled.div`
   }
 `;
 
-const Deadline = styled(Paragraph)`
-  color: darkgray;
-  font-size: 1.1em;
-  font-style: italic;
-  @media (${theme.devices.md}) {
-    font-size: 1.2em;
-  }
-`;
-
 export default function ({}) {
   return (
     <Wrapper>
@@ -57,7 +49,7 @@ export default function ({}) {
       <ImageWrapper>
         <Image src="/images/hall.jpg" alt="City Hall" title="City Hall" priority="true"/>
       </ImageWrapper>
-      <Deadline padding={"0 2rem"}>We kindly request you to RSVP by January 1st</Deadline>
+      <Quote padding={"0 0.75rem"}>We kindly request you to RSVP by January 1st</Quote>
       <ButtonWrapper>
         <AnchorButton text="RSVP" href="#rsvp"/>
       </ButtonWrapper>

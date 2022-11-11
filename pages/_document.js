@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
           <>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
-            <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Abhaya+Libre&family=Cormorant&display=swap" rel="stylesheet"/>
+            <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Abhaya+Libre&family=Cormorant:wght@300;400;500&display=swap" rel="stylesheet"/>
             {initialProps.styles}
             {sheet.getStyleElement()}
           </>
