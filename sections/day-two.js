@@ -23,7 +23,7 @@ export default function ({}) {
         <Image src="/images/robertas-logo.svg" alt="Robertas Logo" title="Robertas Logo" minHeight={["12vw", "55px"]}/>
       </Logo>
       <Paragraph> 1 Essex St East, Temple Bar </Paragraph>
-      <Paragraph>We'll be heading to Roberta's in Temple Bar for beers and nibbles at 7pm on Saturday. We'd love to see you there if you can make it.</Paragraph>
+      <Paragraph>We'll be heading to Roberta's in Temple Bar for beers and pizza at 7pm on Saturday. We'd love to see you there!</Paragraph>
       <Wrapper padding={"0.5rem 0 0 0"}>
         <Button large text="Visit Website" href="https://robertas.ie/"/>
       </Wrapper>
