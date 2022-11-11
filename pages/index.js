@@ -24,8 +24,8 @@ export default function (props) {
         />
       </Head>
       <Layout>
+        <FadeIn delay="100">
           <Hero/>
-          <FadeIn delay="100">
           <Section id="the-big-day">
             <TheBigDay/>
           </Section>
