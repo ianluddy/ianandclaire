@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import theme from '../themes/default';
 import Head from 'next/head';
 import Link from 'next/link';
-import FadeIn from 'react-fade-in';
 import Layout from '../components/layout';
 import Section from '../components/section';
 import TheBigDay from '../sections/the-big-day';
@@ -24,21 +23,19 @@ export default function (props) {
         />
       </Head>
       <Layout>
-        <FadeIn delay="100">
-          <Hero/>
-          <Section id="the-big-day">
-            <TheBigDay/>
-          </Section>
-          <Section id="day-two">
-            <DayTwo/>
-          </Section>
-          <Section id="accommodation">
-            <Accommodation/>
-          </Section>
-          <Section id="rsvp" fullWidth={true}>
-            <Rsvp/>
-          </Section>
-        </FadeIn>
+        <Hero/>
+        <Section id="the-big-day">
+          <TheBigDay/>
+        </Section>
+        <Section id="day-two">
+          <DayTwo/>
+        </Section>
+        <Section id="accommodation">
+          <Accommodation/>
+        </Section>
+        <Section id="rsvp" fullWidth={true}>
+          <Rsvp/>
+        </Section>
       </Layout>
     </>
   );
