@@ -8,7 +8,14 @@ const Wrapper = styled(BaseWrapper)`
   font-weight: 500;
   margin: ${(props) => (props.margin || '1rem auto')};
   letter-spacing: 0.02em;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  line-height: ${(props) => (props.lineHeight || 'initial')};
+  @media (${theme.devices.xs}) {
+    font-size: 1.2em;
+  }
+  @media (${theme.devices.sm}) {
+    font-size: 1.2em;
+  }
   @media (${theme.devices.md}) {
     font-size: 1.3em;
     max-width: 450px;

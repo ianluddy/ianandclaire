@@ -13,30 +13,33 @@ export const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.075em;
   }
   h1 {
+    margin: 1rem;
     text-align: center;
-    font-size: 3.8em;
+    font-size: 2.9em;
+    @media (${theme.devices.xs}) {
+      font-size: 3.4em;
+    }
+    @media (${theme.devices.sm}) {
+      font-size: 3.5em;
+    }
     @media (${theme.devices.md}) {
       font-size: 4em;
+      margin: 1rem 2rem;
     }
   }
   h2 {
     margin: 0 0 1rem 0;
-    font-size: 2.55em;
+    font-size: 2em;
+    @media (${theme.devices.xs}) {
+      font-size: 2.25em;
+    }
     @media (${theme.devices.sm}) {
       margin: 0 0 1rem 0;
-      font-size: 2.9em;
+      font-size: 2.5em;
     }
     @media (${theme.devices.md}) {
       font-size: 3em;
       margin: 2rem 0;
-    }
-  }
-  h3 {
-    font-size: 1.8em;
-    font-weight: normal;
-    font-family: ${theme.fontBody};
-    @media (${theme.devices.md}) {
-      font-size: 2em;
     }
   }
   // Add to calendar button overrides

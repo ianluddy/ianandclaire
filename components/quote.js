@@ -7,9 +7,16 @@ const Quote = styled(Paragraph)`
   font-weight: 400;
   font-size: 1em;
   font-style: italic;
+  font-size: 0.9em;
+  @media (${theme.devices.xs}) {
+    font-size: 1em;
+  }
+  @media (${theme.devices.sm}) {
+    font-size: 1.1em;
+  }
   @media (${theme.devices.md}) {
-    font-weight: 300;
     font-size: 1.2em;
+    font-weight: 300;
   }
 `;
 
