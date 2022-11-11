@@ -8,10 +8,6 @@ import { LinkButton as Button } from '../components/button';
 const Logo = styled.div`
   max-width: 180px;
   margin: 1rem auto;
-
-  @media (${theme.devices.md}) {
-    max-width: 240px;
-  }
 `;
 
 export default function ({}) {

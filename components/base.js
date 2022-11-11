@@ -39,7 +39,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     @media (${theme.devices.md}) {
       font-size: 3em;
-      margin: 2rem 0;
+      margin: 2rem 0 1rem 0;
     }
   }
   // Add to calendar button overrides
