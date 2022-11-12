@@ -9,11 +9,19 @@ import Quote from '../components/quote';
 import { AnchorButton } from '../components/button';
 
 const Wrapper = styled.div`
-  margin: 0 0 3rem 0;
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  bottom: 1rem;
+
   @media (${theme.devices.md}) {
+    position: static;
+    bottom: 0;
+    margin: 0 0 3rem 0;
+    height: auto;
     display: block;
     padding: 0;
   }
