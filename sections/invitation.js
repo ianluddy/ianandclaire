@@ -8,15 +8,14 @@ import Quote from '../components/quote';
 import { AnchorButton } from '../components/button';
 
 const Wrapper = styled.div`
-  margin: 0 0 3rem 0;
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  @media (${theme.devices.md}) {
-    display: block;
-    padding: 0;
-  }
+  display: block;
+  padding: 0;
+  box-shadow: 2px 2px 12px 2px #ccc;
+  display: block;
+  margin: 10px;
 `;
 
 const ButtonWrapper = styled.div`
@@ -83,7 +82,7 @@ export default function ({}) {
       <ImageWrapper>
         <Image src="/images/hall.jpg" alt="City Hall" title="City Hall" priority="true"/>
       </ImageWrapper>
-      <Paragraph>Friday Feb 3, 2023 <br/> City Hall, Dame St. Dublin</Paragraph>
+      <Paragraph>Friday February 3, 2023 <br/> City Hall, Dame St. Dublin</Paragraph>
       <ButtonWrapper>
         <AnchorButton text="RSVP" href="#rsvp"/>
       </ButtonWrapper>

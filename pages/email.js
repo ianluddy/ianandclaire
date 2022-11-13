@@ -8,11 +8,6 @@ const Invite = styled.div`
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
-  a {
-    box-shadow: 2px 2px 12px 2px #ccc;
-    display: block;
-    margin: 10px;
-  }
 `;
 
 export default function (props) {
