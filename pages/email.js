@@ -2,9 +2,8 @@ import styled from 'styled-components';
 import theme from '../themes/default';
 import Head from 'next/head';
 import Image from '../components/image';
-import Invitation from '../sections/invitation';
 
-const Invite = styled.div`
+const Wrapper = styled.div`
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
@@ -19,14 +18,14 @@ export default function (props) {
         </title>
         <meta
           name="description"
-          content="The Big Day"
+          content="Ian & Claire"
         />
       </Head>
-      <Invite>
+      <Wrapper>
         <a href="https://ianandclaire.com/">
           <Image src="/images/invitation.jpg" alt="A Luddy Goode time" title="A Luddy Goode time" priority="true"/>
         </a>
-      </Invite>
+      </Wrapper>
     </>
   );
 }
