@@ -10,10 +10,7 @@ import Paragraph from '../../components/paragraph';
 import { AnchorButton } from '../../components/button';
 
 const Text = styled(Paragraph)`
-
   font-size: 1.2em;
-  /* font-style: italic; */
-  /* line-height: 1.5em; */
 `;
 
 export default function (props) {
@@ -37,9 +34,9 @@ export default function (props) {
         <Text> Vanda Luddy </Text>
         <Text> Alice Goode </Text>
         <Text> Mick McMahon </Text>
-        <Text> Caomh O'Connell </Text>
-        <Text> Aoife O'Connell </Text>
-        <Image margin={"0 auto"} src="/images/svgs/Cheesecake.svg" alt="Cheesecake" title="Cheesecake" width="100px" priority="true"/>        
+        <Text> Caomh O&#39;Connell </Text>
+        <Text> Aoife O&#39;Connell </Text>
+        <Image margin={"0 auto"} src="/images/svgs/Cheesecake.svg" alt="Cheesecake" title="Cheesecake" width="100px" priority="true"/>
       </Sheet>
     </>
   );
