@@ -1,20 +1,13 @@
 import styled from 'styled-components';
-import theme from '../themes/default';
+import theme from '../../themes/default';
 import Head from 'next/head';
-import Image from '../components/image';
-import Link from '../components/link';
-import Title from '../components/title';
-import Wrapper from '../components/wrapper';
-import Paragraph from '../components/paragraph';
-import { AnchorButton } from '../components/button';
-
-const Invitation = styled.div`
-  padding: 1.5rem 0 2rem;
-  box-shadow: 2px 2px 12px 2px #ccc;
-  margin: 10px auto;
-  max-width: 575px;
-  text-align: center;
-`;
+import Image from '../../components/image';
+import Link from '../../components/link';
+import Title from '../../components/title';
+import Wrapper from '../../components/wrapper';
+import Paragraph from '../../components/paragraph';
+import Sheet from '../../components/sheet';
+import { AnchorButton } from '../../components/button';
 
 const Text = styled(Paragraph)`
   text-transform: uppercase;
@@ -34,7 +27,7 @@ export default function (props) {
           content="Ian & Claire"
         />
       </Head>
-      <Invitation>
+      <Sheet>
         <Text> With great pleasure </Text>
         <Title>
           <Image src="/images/svgs/flowers.svg" alt="Flowers" title="Flowers" width="40px" priority="true" hideMobile="true"/>
@@ -50,7 +43,7 @@ export default function (props) {
           <AnchorButton text="RSVP" href="#rsvp"/>
         </Wrapper>
         <Link href="https://ianandclaire.com"> ianandclaire.com </Link>
-      </Invitation>
+      </Sheet>
     </>
   );
 }

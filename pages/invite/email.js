@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import theme from '../themes/default';
+import theme from '../../themes/default';
 import Head from 'next/head';
-import Image from '../components/image';
+import Image from '../../components/image';
 
 const Wrapper = styled.div`
   max-width: 500px;

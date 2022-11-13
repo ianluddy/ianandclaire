@@ -19,10 +19,10 @@ const Wrapper = styled(BaseWrapper)`
   }
 `;
 
-export default function ({ src, alt, width, height, minHeight, priority, transform, hideMobile, hideDesktop }) {
+export default function ({ ...props }) {
   return (
-    <Wrapper width={width} minHeight={minHeight} height={height} transform={transform} hideMobile={hideMobile} hideDesktop={hideDesktop}>
-      <Image src={src} alt={alt} fill priority={priority || false}/>
+    <Wrapper {...props}>
+      <Image src={props.src} alt={props.alt} fill priority={props.priority || false}/>
     </Wrapper>
   );
 }
