@@ -27,7 +27,7 @@ export default function (props) {
       </Head>
       <Invite>
         <a href="https://ianandclaire.com/">
-          <Image src="/images/invite.png" alt="A Luddy Goode time" title="A Luddy Goode time" priority="true"/>
+          <Image src="/images/invite.jpg" alt="A Luddy Goode time" title="A Luddy Goode time" priority="true"/>
         </a>
       </Invite>
     </>
