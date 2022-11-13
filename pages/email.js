@@ -6,11 +6,8 @@ import Invitation from '../sections/invitation';
 
 const Invite = styled.div`
   max-width: 500px;
-  margin: 1rem auto 0 auto;
+  margin: 0 auto;
   text-align: center;
-  @media (${theme.devices.md}) {
-    margin: 3rem auto 0 auto;
-  }
 `;
 
 export default function (props) {
