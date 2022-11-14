@@ -27,7 +27,7 @@ export default function (props) {
           content="Ian & Claire"
         />
       </Head>
-      <Sheet>
+      <Sheet width={"575px"}>
         <Text> With great pleasure </Text>
         <Title>
           <Image src="/images/svgs/flowers.svg" alt="Flowers" title="Flowers" width="40px" priority="true" hideMobile="true"/>

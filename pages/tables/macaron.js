@@ -4,7 +4,7 @@ import TablePlan from '../../components/tablePlan';
 
 export default function (props) {
   return (
-    <TablePlan name="cheesecake" image="/images/svgs/cheesecake.svg">
+    <TablePlan name="macaron" image="/images/svgs/macaron.svg">
       <div> Ian Luddy </div>
       <div> Claire Goode </div>
       <div> Paddy Goode </div>
