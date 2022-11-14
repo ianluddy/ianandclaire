@@ -23,7 +23,7 @@ export default function (props) {
       </Head>
       <Wrapper>
         <a href="https://ianandclaire.com/">
-          <Image src="/images/ian-and-claire.jpg" alt="A Luddy Goode time" title="A Luddy Goode time" priority="true"/>
+          <Image src="/images/ian-and-claire-invite.jpg" alt="A Luddy Goode time" title="A Luddy Goode time" priority="true"/>
         </a>
       </Wrapper>
     </>
