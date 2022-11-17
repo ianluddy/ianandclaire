@@ -168,7 +168,7 @@ export default function ({ children, hide, padding }) {
   return (
     <>
       <h2>The Big Day</h2>
-      <Paragraph>
+      <Paragraph margin={"0 auto"}>
         Friday Feb 3, 2023
         <AddToCalendar/>
       </Paragraph>
