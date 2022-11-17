@@ -1,6 +1,5 @@
 import theme from '../themes/default';
 import styled from 'styled-components';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Image from '../components/image';
 import Menu from '../components/menu';
 import Title from '../components/title';
@@ -8,8 +7,9 @@ import Wrapper from '../components/wrapper';
 import Paragraph from '../components/paragraph';
 import Quote from '../components/quote';
 import { AnchorButton } from '../components/button';
+import FadeIn from 'react-fade-in';
 
-const Hero = styled.div`
+const Hero = styled(FadeIn)`
   margin: 0 0 3rem 0;
   padding: 0 1rem;
   display: flex;
