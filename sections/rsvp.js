@@ -16,7 +16,7 @@ export default function ({ children, hide, padding }) {
   return (
     <>
       <h2>Rsvp</h2>
-      <Quote padding={"0 0.75rem"}>We kindly request you to RSVP by January 1st</Quote>
+      <Quote padding={"0 0.75rem"}>We kindly request that you RSVP by December 16th</Quote>
       <IframeWrapper>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftDXNh4spdexg6NNx7mEVMUIkkQmTkURjkvtbL7dNBvoCd7w/viewform?embedded=true" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
       </IframeWrapper>

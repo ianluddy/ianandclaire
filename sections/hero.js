@@ -41,7 +41,7 @@ export default function ({}) {
       <HeroImage>
         <Image src="/images/hall.jpg" alt="City Hall" title="City Hall" priority="true"/>
       </HeroImage>
-      <Quote margin={"0.5rem auto 1rem auto"} padding={"0 0.75rem"}>We kindly request you to RSVP by January 1st</Quote>
+      <Quote margin={"0.5rem auto 1rem auto"} padding={"0 0.75rem"}>We kindly request that you RSVP by December 16th</Quote>
       <Wrapper>
         <AnchorButton text="RSVP" href="#rsvp"/>
       </Wrapper>
