@@ -10,13 +10,16 @@ const fadeIn = keyframes`
 
 const Card = styled.div`
   max-width: 560px;
-  margin: 2rem auto 0;
+  margin: 2rem 1rem 0;
   padding: 1.5rem 1.25rem;
   border: 1px solid #f0d5d9;
   border-radius: 8px;
   background: #fffafa;
   text-align: left;
   animation: ${fadeIn} 0.4s ease;
+  @media (min-width: 592px) {
+    margin: 2rem auto 0;
+  }
   @media (${theme.devices.md}) {
     padding: 2.5rem 2.5rem;
   }
