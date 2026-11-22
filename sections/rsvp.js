@@ -152,14 +152,6 @@ const Reset = styled.button`
   font-size: 1rem;
 `;
 
-const Note = styled.p`
-  margin: 1.25rem 0 0;
-  text-align: center;
-  font-size: 0.9rem;
-  color: ${theme.textLight};
-  font-style: italic;
-`;
-
 const initialState = {
   name: '',
   email: '',
@@ -258,7 +250,6 @@ export default function Rsvp() {
               {status === 'submitting' ? 'Sending…' : 'Send RSVP'}
             </Submit>
           </Form>
-          <Note>This form is a demo — responses are not stored.</Note>
         </Card>
       )}
     </>
